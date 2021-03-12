@@ -1,0 +1,50 @@
+<!--
+======================= START OF LICENSE NOTICE =======================
+  Copyright (C) 2021 ShreyJain. All Rights Reserved
+
+  NO WARRANTY. THE PRODUCT IS PROVIDED BY DEVELOPER "AS IS" AND ANY
+  EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+  PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL DEVELOPER BE LIABLE FOR
+  ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+  IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THE PRODUCT, EVEN
+  IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+======================== END OF LICENSE NOTICE ========================
+  Primary Author: ShreyJain
+
+-->
+<html>
+  <head>
+    <title>Webcam Streaming</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+        background: #F4EBE8;
+      }
+
+      h1 {
+        margin: 20px auto;
+        color: #3993DD;
+      }
+
+      .feed {
+        height: 500px;
+        width: 600px;
+        margin: auto;
+        border: 10px solid #6A3E37;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Webcam Streaming</h1>
+    <img class="feed" src="{{ url_for('video_feed') }}">
+  </body>
+</html>
